@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: hello-dotnet
+  name: demo-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: demo-app
+  template:
+    metadata:
+      labels:
+        run: demo-app
+    spec:
+      containers:
+      - name: demo-app
+        image: gcr.io/kubernetes-demo-385909/demo-app:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080

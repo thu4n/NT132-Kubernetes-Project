@@ -1,0 +1,10 @@
+{
+  "folders": [
+    {
+      "path": "file:///home/g21522652"
+    }
+  ],
+  "settings": {
+    "csharp.suppressDotnetRestoreNotification": true
+  }
+}
