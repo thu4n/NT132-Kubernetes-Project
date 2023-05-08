@@ -2,11 +2,60 @@
     ViewData["Title"] = "Docs";
 }
 
-<h1>Giới Thiệu Tổng Quát </h1>
-<h2>I. Về ảo hóa</h2>
-<h3>1. Khái Niệm</h3>
-<h3>2. Các loại ảo hóa</h3>
-<h3>3. Ưu Nhược điểm của Docker với các loại ảo hóa khác</h3>
-<h2>II. Về Kubetnetes</h3>
-<h2>III. Mối Quan Hệ Kubetnetes và Dockerfile</h4>
+<h2>Giới Thiệu Tổng Quát </h2>
+<h3>I. Về ảo hóa</h3>
+<h4><u>1. Khái Niệm</u>:</h4>
+<p>- Ảo hóa có thể hiểu đơn giản là phiên bản ảo của phần cứng (hệ điều hành, máy chủ, thiết bị lưu trữ,
+     tài nguyên mạng) được tạo ra để thực hiện các chức năng cụ thể. Ví dụ, công nghệ ảo hóa tạo ra các 
+     hệ thống ảo bằng cách mô phỏng phần cứng, cho phép chạy nhiều hệ điều hành và ứng dụng trên cùng một máy chủ vật lý.<br>
+-Gồm các loại ảo hóa: Ảo hóa phần cứng,Ảo hóa phần mềm,ảo hóa bộ nhớ ,
+Ảo hóa lưu trữ,Ảo hóa dữ liệu,Ảo hóa mạng,Ảo hóa máy tính.<br>
+    -Trong đó, Docker là ảo hóa ứng dụng thuộc loại ảo hóa phần mềm, 
+    cho phép đóng gói ứng dụng cùng với các thư viện và các phụ thuộc để có thể chạy trên bất kỳ nền tảng nào,
+     bao gồm cả máy tính cá nhân và máy chủ.</p>
+<h4><u>2. Các loại ảo hóa</u>:</h4>
+<p><b>+ Hardware Virtualization:</b><br>
+    là một loại phổ biến, thường được gọi là các loại ảo hóa máy chủ,chạy nhiều máy ảo trong một máy chủ vật lý duy nhất. 
+     Tất cả các máy chủ ảo đang được thực thi có thể chia sẻ tài nguyên (CPU, bộ nhớ, lưu trữ, v.v.) 
+    của máy chủ vật lý trên trình ảo hóa (lớp phần mềm giữa phần cứng bên dưới và các máy ảo).<br>
+    <i>&nbsp *Full-Virtualization</i><br>
+    <i>&nbsp *Emulation Virtualization</i><br>
+    <i>&nbsp *Para-Virtualization Virtualization</i><br>
+</p>
+<p><b>+ Software Virtualization:</b><br>
+Ảo hóa phần mềm là tạo ra nhiều môi trường ảo hóa trên một máy chủ vật lý. 
+Kiểu ảo hóa này tạo ra một hệ thống máy tính hoàn chỉnh với phần cứng cho phép các hệ điều hành khách chạy.<br>
+ <i>&nbsp *Operating System Virtualization</i><br>
+ <i>&nbsp *Application Virtualization</i>(<a href="https://www.docker.com/">Docker</a>)<br>
+ <i>&nbsp *Service Virtualization</i>
+</p>
+
+<p><b>+ Memory Virtualization:</b><br>
+Các sản phẩm và nền tảng ảo hóa có bộ nhớ phổ biến là nền tảng ảo hóa bộ nhớ mạng RNA, IBM Websphere ExtremeScale , Oracle Coherence.
+</p>
+<p><b>+ Storage Virtualization:</b><br>
+Các sản phẩm ảo hóa lưu trữ phổ biến là Máy chủ lưu trữ mạng FalconStor, IBM Storage Virtualization, QUADStor Systems
+</p>
+<p><b>+ Network Virtualization:</b><br>
+Các sản phẩm và nền tảng ảo hóa mạng phổ biến là 6WIND Virtual Accelerator, Cisco Nexus Virtual Services Appliance, JunosV App Engine.
+</p>
+<p><b>+ Desktop Virtualization:</b><br>
+Các sản phẩm và nền tảng ảo hóa máy tính để bàn phổ biến bao gồm Amazon WorkSpaces, Citrix XenDesktop, VMware Workstation.
+</p>
+<p><b>+ Data Virtualization:</b><br>
+Các sản phẩm ảo hóa dữ liệu phổ biến là Denodo, JBoss Data Virtualization,TIBCO Data Virtualization.
+</p>
+<h4><u>3. Ưu Nhược điểm của Docker với các loại ảo hóa khác</u>:</h4>
+<h5>+ Ưu Điểm:</h5>
+<p>+ Hiệu suất cao hơn: Docker sử dụng cùng một kernel của hệ điều hành vật lý để chạy nhiều container, do đó có thể chạy nhanh hơn so với ảo hóa phần cứng hoặc ảo hóa hệ điều hành.<br>
++ Tiết kiệm tài nguyên: Docker container thường có kích thước nhỏ hơn so với máy ảo, do đó tiết kiệm tài nguyên hệ thống và cho phép chạy nhiều container trên cùng một máy tính.<br>
++ Dễ sử dụng: Docker cung cấp các công cụ quản lý container và các thư viện để đóng gói ứng dụng một cách đơn giản và tiện lợi.
+</p>
+<h5>+ Nhược Điểm:</h5>
+<p>+ Các container chia sẻ cùng một hạt nhân với máy chủ vật lý, do đó nếu hạt nhân này gặp sự cố thì tất cả các container cũng bị ảnh hưởng.<br>
++ Chỉ có thể triển khai ứng dụng trên quy mô nhỏ( hàng trăm , hàng ngàn container)<br>
++ Chưa hỗ trợ hoàn toàn cho việc quản lý ứng dụng trong production , cần phải sử dụng các công cụ phần mềm bên ngoài để quản lý và triển khai ứng dụng.
+</p>
+<h3>II. Về Kubetnetes</h3>
+<h3>III. Mối Quan Hệ Kubetnetes và Dockerfile</h3>
 <p>Use this page to detail your site's privacy policy.</p>
