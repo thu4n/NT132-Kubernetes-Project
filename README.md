@@ -1,11 +1,12 @@
 # NT132-Kuberbetes-Project
 Đây là repository để lưu trữ code cho ứng dụng web đơn giản, phục vụ cho mục dích demo các tính năng của Kubernetes.
+
 Thành viên nhóm:
 - Tống Võ Anh Thuận - 21522652 (trưởng nhóm)
 - Nguyễn Lê Tiến Phát - 21522446
 - Nguyễn Thị Yến Ly - 21522316
 ## Nội dung demo
-Sử dụng Kubernetes để triển khai một ứng dụng web trên một multi-node cluster và thể hiện một số tính năng chính của Kubernetes trên cluster được tạo. Xuyên suốt demo sẽ sử dụng các dịch vụ được cung cấp bởi Google Cloud Platform.
+Sử dụng Kubernetes để triển khai và vận hành một ứng dụng web trên một multi-node cluster và thể hiện một số tính năng chính của Kubernetes trên cluster được tạo. Xuyên suốt demo sẽ sử dụng các dịch vụ được cung cấp bởi Google Cloud Platform.
 ## Công nghệ sử dụng
 -	**ASP.NET Core:** Framework sử dụng để tạo ứng dụng web. 
 -	**Docker:** Đóng gói và tạo Docker image của ứng dụng web.
