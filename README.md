@@ -1,4 +1,4 @@
-# NT132-Kuberbetes-Project
+# NT132-Kubernetes-Project
 Đây là repository để lưu trữ code cho ứng dụng web đơn giản, phục vụ cho mục dích demo các tính năng của Kubernetes.
 
 Thành viên nhóm:
