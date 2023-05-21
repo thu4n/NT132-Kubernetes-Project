@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    run: hello-dotnet
+    run: demo-app
   name: demo-app
   namespace: default
 spec:
