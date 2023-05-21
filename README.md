@@ -1,5 +1,5 @@
 # NT132-Kubernetes-Project
-Đây là repository để lưu trữ code cho ứng dụng web đơn giản, phục vụ cho mục dích demo các tính năng của Kubernetes. Mọi thay đổi sẽ được ánh xạ qua repository trên CSR để build và deploy.
+Đây là repository để lưu trữ code cho ứng dụng web đơn giản, phục vụ cho mục dích demo các tính năng của Kubernetes.
 
 Thành viên nhóm:
 - Tống Võ Anh Thuận - 21522652 (trưởng nhóm)
